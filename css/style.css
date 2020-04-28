@@ -1,0 +1,147 @@
+body {
+	color: #fff;
+	background: #eee url('../img/bg.jpg') repeat;
+	font-size: 25px;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+li, a {
+	list-style: none;
+	color: #fff;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.nav {
+	display: flex;
+
+	background-color: #c3c3;
+	padding: 12px;
+
+	margin-bottom: 50px;
+
+}
+
+.nav-item {
+	margin-left: 20px;
+	padding: 5px;
+
+}
+
+.active {
+	background-color: #000;
+	border-radius: 6px;
+}
+
+.footer-item {
+	padding: 5px;
+}
+
+.footer-item a:hover {
+	text-decoration: underline;
+}
+
+.nav-item:hover {
+	background-color: #000;
+	border-radius: 6px;
+
+}
+
+footer {
+
+	font-size: 15px;
+}
+
+.map {
+	text-align: center;
+}
+
+.comments {
+	display: flex;
+	flex-wrap: wrap;
+  	align-content: space-between;
+
+}
+
+.comment {
+	margin-left: 5px;
+	border: 1px solid #ddd;
+	padding:  15px;
+
+}
+
+
+
+form {
+  color: #757575;
+  background: #c3c3;
+  margin: 100px auto;
+  width: 400px;
+  padding: 40px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+h1 {
+
+  text-align: center;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  margin-bottom: 40px;
+}
+input:focus {
+  outline: none;
+}
+.label-box {
+  position: relative;
+}
+label {
+  position: absolute;
+  top: -66px;
+  font-size: 16px;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+input:focus ~ .label-box label,
+input:valid ~ .label-box label {
+  font-size: 14px;
+  transform: translateY(-35px);
+  color: rgba(255,255,0,0.7);
+}
+input[class="btn"] {
+  border: none;
+  color: #fff;
+  background: rgba(52,152,219,0.7);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+input[class="btn"]:hover {
+  cursor: pointer;
+}
+.label-box::before,
+.label-box::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 40px;
+  background-color: rgba(52,152,219,0.7);
+  transition: all 0.3s;
+}
+.label-box::before {
+  left: 50%;
+}
+.label-box::after {
+  right: 50%;
+}
+input:focus ~ .label-box::before,
+input:focus ~ .label-box::after {
+  width: 50%;
+}
